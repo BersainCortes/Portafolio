@@ -1,0 +1,434 @@
+:root{
+    --background-color: #050a30;
+    --complement-color: #101f97;
+    --ColorText: #fff;
+    --Fuente: 'Courier New', Courier, monospace;
+    --Titulos: 'Alata';
+}
+
+body, html{
+    padding: 0px;
+    margin: 0px;
+}
+
+#particles-js{
+    background-color: var(--background-color);
+    width: 100%;
+    height: 400vh;
+}
+
+h2{
+    color: var(--ColorText);
+    font-family: var(--Titulos);
+    font-size: 350%;
+    margin: 0px;
+}
+
+p{
+    color: var(--ColorText);
+    font-family: var(--Fuente);
+    font-size: 15px;
+}
+
+#nombre, #texto, #sobre-mi, #proyectos, #contacto{
+    position: absolute;
+    z-index: 100;
+}
+
+#nombre{
+    background-color: transparent;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+}
+
+#texto{
+    background-color: transparent;
+    width: 50%;
+    top: 30%;
+    left: 25%;
+    right: 25%;
+}
+
+#texto #titulo{
+    text-align: center;
+}
+
+#texto #mensaje{
+    text-align: center;
+}
+
+#texto button{
+    background-color: transparent;
+    border: none;
+    margin-left: 45%;
+    margin-right: 45%;
+    width: 10%;
+    animation: btn-ani 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes btn-ani {
+    0%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 10px;
+    }
+}
+
+.material-symbols-outlined {
+  color: var(--ColorText);
+}
+
+#sobre-mi{
+    top: 100vh;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    display: flex;
+}
+
+#sobre-mi #left{
+    width: 45%;
+    margin-right: auto;
+}
+
+#sobre-mi #right{
+    width: 45%;
+    margin-left: auto;
+}
+
+#sobre-mi #right #progress{
+    background-color: var(--ColorText);
+    width: 100%;
+    border-radius: 5px;
+}
+
+#sobre-mi #right #progress div{
+    background-color: var(--complement-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+#sobre-mi #right #progress #html{
+    width: 80%;
+}
+
+#sobre-mi #right #progress #css{
+    width: 80%;
+}
+
+#sobre-mi #right #progress #js{
+    width: 70%;
+}
+
+#sobre-mi #right #progress #php{
+    width: 65%;
+}
+
+#sobre-mi #right #progress #sql{
+    width: 70%;
+}
+
+#proyectos{
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    top: 180vh;
+}
+
+#proyectos #galery{
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70vh;
+    background-color: transparent;
+}
+
+#proyectos #galery #p{
+    background-color: var(--ColorText);
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+#contacto{
+    top: 290vh;
+    background-color: transparent;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+}
+
+#contacto form{
+    text-align: center;
+}
+
+#contacto form input{
+    width: 30%;
+    padding: 10px;
+    font-family: var(--Fuente);
+    color: var(--background-color);
+    border: 1px solid var(--ColorText);
+    background-color: var(--ColorText);
+    border-radius: 5px;
+}
+
+#contacto form textarea{
+    width: 95%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-family: var(--Fuente);
+    color: var(--background-color);
+    border: 1px solid var(--ColorText);
+    font-size: 14px;
+    background-color: var(--ColorText);
+    resize: none;
+    border-radius: 5px;
+}
+
+#contacto form button{
+    width: 15%;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: var(--Fuente);
+    color: var(--background-color);
+    border: 1px solid var(--ColorText);
+    background-color: var(--ColorText);
+    transition: all 0.5s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contacto form button:hover{
+    background-color: var(--ColorText);
+    color: var(--background-color);
+    width: 30%;
+}
+
+#contacto #social{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#contacto #social a{
+    text-decoration: none;
+    color: var(--ColorText);
+    font-family: var(--Fuente);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*==========================================================
+AREA DE CELULAR
+============================================================= */
+
+@media screen and (max-width: 480px) {
+    #particles-js {
+      height: 300vh;
+      width: 100%;
+    }
+
+    h2{
+        color: var(--ColorText);
+        font-family: var(--Titulos);
+        font-size: 200%;
+        margin: 0px;
+    }
+    
+    p{
+        color: var(--ColorText);
+        font-family: var(--Fuente);
+        font-size: 15px;
+    }
+    
+    #nombre, #texto, #sobre-mi, #proyectos, #contacto{
+        position: absolute;
+        z-index: 100;
+    }
+    
+    #nombre{
+        background-color: transparent;
+        width: 80%;
+        top: 5%;
+        left: 10%;
+        right: 10%;
+    }
+    
+    #texto{
+        background-color: transparent;
+        width: 50%;
+        top: 20vh;
+        left: 25%;
+        right: 25%;
+    }
+    
+    #texto #titulo, #mensaje{
+        text-align: center;
+    }
+    
+    #texto button{
+        background-color: transparent;
+        border: none;
+        margin-left: 45%;
+        margin-right: 45%;
+        width: 10%;
+        animation: btn-ani 1s infinite;
+        animation-direction: alternate;
+    }
+    
+    @keyframes btn-ani {
+        0%{
+            margin-top: 0px;
+        }
+        100%{
+            margin-top: 10px;
+        }
+    }
+    
+    .material-symbols-outlined {
+      color: var(--ColorText);
+    }
+    
+    #sobre-mi{
+        top: 60vh;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        display: block;
+    }
+
+    #sobre-mi #left{
+        width: 100%;
+    }
+
+    #sobre-mi #right{
+        width: 100%;
+    }
+    
+    #sobre-mi #right #progress{
+        background-color: var(--ColorText);
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    #sobre-mi #right #progress div{
+        background-color: var(--complement-color);
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    #sobre-mi #right #progress #html{
+        width: 80%;
+    }
+    
+    #sobre-mi #right #progress #css{
+        width: 80%;
+    }
+    
+    #sobre-mi #right #progress #js{
+        width: 70%;
+    }
+    
+    #sobre-mi #right #progress #php{
+        width: 65%;
+    }
+    
+    #proyectos{
+        width: 80%;
+        left: 10%;
+        right: 10%;
+        top: 140vh;
+    }
+    
+    #proyectos #galery{
+        overflow: scroll;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 25vh;
+        background-color: transparent;
+    }
+    
+    #proyectos #galery #p{
+        background-color: var(--ColorText);
+        margin-left: 5px;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100px;
+        height: 100px;
+    }
+    
+    #contacto{
+        top: 190vh;
+        background-color: transparent;
+        width: 80%;
+        left: 10%;
+        right: 10%;
+    }
+    
+    #contacto form{
+        text-align: center;
+    }
+    
+    #contacto form input{
+        width: 90%;
+        padding: 10px;
+        margin-top: 10px;
+        font-family: var(--Fuente);
+        color: var(--background-color);
+        border: 1px solid var(--ColorText);
+        background-color: var(--ColorText);
+        border-radius: 5px;
+    }
+    
+    #contacto form textarea{
+        width: 90%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        font-family: var(--Fuente);
+        color: var(--background-color);
+        border: 1px solid var(--ColorText);
+        font-size: 14px;
+        background-color: var(--ColorText);
+        resize: none;
+        border-radius: 5px;
+    }
+    
+    #contacto form button{
+        width: 95%;
+        padding: 10px;
+        margin-top: 20px;
+        font-family: var(--Fuente);
+        color: var(--background-color);
+        border: 1px solid var(--ColorText);
+        background-color: var(--ColorText);
+        transition: all 0.5s;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    #contacto #social{
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    #contacto #social a{
+        text-decoration: none;
+        color: var(--ColorText);
+        font-family: var(--Fuente);
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}

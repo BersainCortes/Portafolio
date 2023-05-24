@@ -1,0 +1,30 @@
+{
+    "particles": {
+      "number": {
+        "value": 100
+      },
+      "color": {
+        "value": "#233dff"
+      },
+      "size": {
+        "value": 3
+      },
+      "shape": {
+        "type": "circle"
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        }
+      },
+      "modes": {
+        "repulse": {
+            "distance": 50
+        }
+      }
+    }
+  }
+  
