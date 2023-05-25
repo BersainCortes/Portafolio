@@ -1,0 +1,35 @@
+{
+    "nommbre": {
+        "nombre" : "Bersain Cortes"
+    },
+    "tituloPrincipal": {
+        "titulo": "Desarrollador web Frontend y Backend",
+        "subtitulo": "Bienvenido a mi portafolio web"
+    },
+    "sobreMi": {
+        "titulo": "Sobre mi",
+        "parrafo1": "¡Hola! Soy un estudiante de Ing. En Sistemas con experiencia en desarrollo web, apasionado y creativo con 1 año de experiencia en el diseño y desarrollo de sitios web. Me encanta trabajar con tecnología y experimentar nuevos diseños y métodos de desarrollo web.",
+        "parrafo2": "Me gusta trabajar en equipo y colaborar con otros profesionales para asegurarme de que el proyecto se entregue a tiempo y con la mejor calidad posible. Si estás buscando un desarrollador web dedicado y creativo, estoy seguro de que puedo ayudarte."
+    },
+    "habilidades": {
+        "titulo": "Habilidades",
+        "html": "80%",
+        "css": "80%",
+        "js": "50%",
+        "php": "40%",
+        "mysql": "50%"
+    },
+    "proyectos": {
+        "titulo": "Proyectos",
+        "parrafo1": "Aquí encontrarás algunos proyectos que he desarrollado en mi tiempo libre y en el que puedo ayudarte en cualquier momento."
+    },
+    "contacto": {
+        "titulo": "Contacto",
+        "parrafo1": "Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo."
+    },
+    "social":{
+        "titulo": "Redes sociales",
+        "ig": "https://www.instagram.com/bersain.crts/",
+        "fb": "https://www.facebook.com/bersain.crts/"
+    }
+}
