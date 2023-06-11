@@ -6,63 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bersain Cortés</title>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://fonts.cdnfonts.com/css/alata" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleV2.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <div id="container">
-        
-        <div id="nombre">
-        </div>
-        <div id="texto">
+    <div class="container" id="container">
+        <nav id="nav-bar">
+            <div id="nombre"></div>
+
+            <div id="menu">
+                <a href="#section2">Sobre mi</a>
+                <a href="#section3">Proyectos</a>
+                <a href="#section4">Contacto</a>
+                <a href="#section5">Social</a>
+            </div>
+        </nav>
+
+        <div class="main" id="section1">
+            <div id="banner"></div>
         </div>
 
-        <div id="sobre-mi">
-            <div id="left">
-            </div>
-            <div id="right">
-                <div id="skils">
+        <div class="main" id="section2">
+            <div id="sobre-mi">
+                <div id="left"></div>
+
+                <div id="right">
                     <h2>Habilidades</h2>
-                    <div id="progress">
-                        <div id="html">
-                            <p>HTML - 80%</p>
+                    <div id="skils">
+                        <p>HTML</p>
+                        <div id="progress">
+                            <div id="html">
+                                <p>80%</p>
+                            </div>
                         </div>
-                    </div>
-                    <div id="progress">
-                        <div id="css">
-                            <p>CSS - 80%</p>
+
+                        <p>CSS</p>
+                        <div id="progress">
+                            <div id="css">
+                                <p>80%</p>
+                            </div>
                         </div>
-                    </div>
-                    <div id="progress">
-                        <div id="js">
-                            <p>JS - 70%</p>
+
+                        <p>JS</p>
+                        <div id="progress">
+                            <div id="js">
+                                <p>70%</p>
+                            </div>
                         </div>
-                    </div>
-                    <div id="progress">
-                        <div id="php">
-                            <p>PHP - 65%</p>
+
+                        <p>PHP</p>
+                        <div id="progress">
+                            <div id="php">
+                                <p>65%</p>
+                            </div>
                         </div>
-                    </div>
-                    <div id="progress">
-                        <div id="sql">
-                            <p>MySQL - 70%</p>
+
+                        <p>MySQL</p>
+                        <div id="progress">
+                            <div id="sql">
+                                <p>70%</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div id="proyectos">
-            <h2 id="tituloProyectos"></h2>
-            <p id="pProyectos"> </p>
-
-            <div id="galery">
-                <div id="p"></div>
+        <div class="main" id="section3">
+            <div id="proyectos">
+                <h2 id="tituloProyectos"></h2>
+                <p id="pProyectos"> </p>
+    
+                <div id="galery">
+                </div>
             </div>
         </div>
 
-        <div id="contacto">
+        <div class="main" id="section4">
             <h2 id="tContacto"></h2>
             <p id="pContacto"></p>
             <form action="" method="post">
@@ -72,15 +92,17 @@
                 <textarea name="" id="" cols="30" rows="10" placeholder="Agrega un comentario"></textarea>
                 <button>Enviar</button>
             </form>
-
-            <div id="social">
-                <a href="https://www.instagram.com/bersain.crts/" target="_blank">Instagram</a>
-            </div>
         </div>
+
+        <div class="main" id="section5">
+            <a href="https://www.instagram.com/bersain.crts/" target="_blank">Instagram</a>
+        </div>
+
         <div id="particles-js"></div>
     </div>
-    <script src="app.js"></script>
+    <script src="js/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="infor.js"></script>
+    <script src="js/infor.js"></script>
+    <script src="js/scrollReveal.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 {
     "nombre": {
-        "nombre" : "Bersain Cortes"
+        "nombre" : "Bersaín Cortés"
     },
     "tituloPrincipal": {
         "titulo": "Desarrollador web Frontend y Backend",
@@ -29,7 +29,6 @@
     },
     "social":{
         "titulo": "Redes sociales",
-        "ig": "https://www.instagram.com/bersain.crts/",
-        "fb": "https://www.facebook.com/bersain.crts/"
+        "ig": "https://www.instagram.com/bersain.crts/"
     }
 }
