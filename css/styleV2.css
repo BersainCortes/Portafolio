@@ -6,11 +6,9 @@
     --ColorText: #fff;
     --Fuente: 'Courier New', Courier, monospace;
     --background-color-cristal: rgba(255, 255, 255, 0.137);
-
 }
 
 /* ESTABLECIENDO CONFIGURACIONES GENERALES */
-
 body{
     padding: 0px;
     margin: 0px;
@@ -27,222 +25,478 @@ body{
 }
 
 #nav-bar, #section1, #section2, #section3, #section4, #section5{
-    height: fit-content;
-}
-
-#nav-bar, #section1, #section2, #section3, #section4, #section5{
     background-color: var(--background-color-cristal);
     border-radius: 10px;
     left: 15%;
     right: 15%;
     backdrop-filter: blur(5px);
     padding: 10px;
-}
-
-#nav-bar, #section1, #section2, #section3, #section4, #section5{
+    height: fit-content;
+    font-family: var(--Fuente);
     position: absolute;
     z-index: 100;
 }
+  
+@media screen and (min-width: 400px) and (max-width: 767px) {
 
-h2{
-    font-size: 200%;
-    text-align: center;
-}
-/* ESTILOS GENERALES DEL CONTAINER */
+    .container{
+        width: 100%;
+        height: fit-content;
+        margin: 0px;
+    }
 
+    /* ESTILOS NAV BAR */
+    .container #nav-bar{
+        top: 5%;
+        height: fit-content;
+        width: 100%;
+        margin-left: -15%;
+        padding: 0px;
+        border-radius: 0px;
+        z-index: 101;
+    }
 
-/* ESTILOS DEL NAV-BAR */
-.container #nav-bar{
-    top: 5%;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    font-family: var(--Fuente);
-}
-
-.container #nav-bar #nombre{
-    margin-left: 5%;
-    margin-right: auto;
-}
-
-.container #nav-bar #menu{
-    margin-left: auto;
-    margin-right: 5%;
-}
-
-.container #nav-bar #menu a{
-    margin-left: 10px;
-    margin-right: 10px;
-    color: var(--ColorText);
-    text-decoration: none;
-}
-
-/* ESTILOS PARA LA SECCION 1 */
-.container #section1{
-    text-align: center;
-    top: 30%;
-    font-family: var(--Fuente);
-}
-
-.container #section1 h2, p{
-    text-align: center;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container #section1 h2{
-    font-size: 60px;
-    margin-bottom: 0px;
-}
-
-.container #section1 p{
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-/* ESTILOS PARA LA SECTION 2 */
-.container #section2{
-    top: 110%;
-    font-family: var(--Fuente);
-}
-
-.container #section2 #sobre-mi{
-    display: flex;
-}
-
-.container #section2 #sobre-mi #left{
-    width: 50%;
-}
-
-.container #section2 #sobre-mi #left p{
-    text-align: justify;
-}
-
-.container #section2 #sobre-mi #right{
-    width: 48%;
-    margin-left: auto;
-}
-
-.container #section2 #sobre-mi #right #skils #progress{
-    background-color: #fff;
-    width: 90%;
+    .container #nav-bar button{
+        display: block;
+        background-image: url("../icons/menu.png");
+        background-position: center;
+        background-size: cover;
+        background-color: transparent;
+        width: 32px;
+        height: 32px;
+        border: none;
+        cursor: pointer;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 5%;
+    }
     
-    margin-top: 5px;
-    margin-bottom: 15px;
-    background-color:var(--background-color-cristal);
-    backdrop-filter: blur(5px);
-    border-radius: 10px;
-}
+    .container #nav-bar #nombre{
+        display: flex;
+        align-items: center;
+    }
 
-.container #section2 #sobre-mi #right #skils p{
-    margin: 0px;
-    text-align: left;
-}
+    .container #nav-bar #nombre p{
+        width: fit-content;
+    }
+    
+    .container #nav-bar #menu{
+        display: none;
+        border-top: 1px solid var(--ColorText);
+    }
 
-.container #section2 #sobre-mi #right #skils #progress p{
-    text-align: center;
-    margin: 0px;
-}
+    .container #nav-bar #menu li{
+        list-style: none;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    .container #nav-bar #menu a{
+        margin-left: 10px;
+        margin-right: 10px;
+        color: var(--ColorText);
+        margin-top: 10px;
+        text-decoration: none;
+    }
 
-.container #section2 #sobre-mi #right #skils #progress div{
-    height: 10px;
-    padding: 10px;
-    background-color: var(--background-color);
-    border-radius: 10px;
-}
+    /* ESTILOS PARA LA SECCION 1 */
+    .container #section1{
+        text-align: center;
+        top: 15%;
+        font-family: var(--Fuente);
+    }
+    
+    .container #section1 h2, p{
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container #section1 h2{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    
+    .container #section1 p{
+        font-size: 20px;
+        margin-top: 20px;
+    }
 
-#html, #css{
-    width: 80%;
-}
+    
 
-#js, #sql{
-    width: 70%;
-}
+    /* ESTILOS PARA LA SECCION 2 */
+    .container #section2{
+        top: 50%;
+        font-family: var(--Fuente);
+    }
+    
+    .container #section2 h2, p{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container #section2 h2{
+        text-align: center;
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    
+    .container #section2 p{
+        margin-top: 20px;
+        text-align: justify;
+    }
 
-#php{
-    width: 65%;
-}
+    .container #section2 #sobre-mi #right{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container #section2 #sobre-mi #right #skils #progress{
+        background-color: #fff;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        background-color:var(--background-color-cristal);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container #section2 #sobre-mi #right #skils p{
+        margin: 0px;
+        text-align: left;
+    }
+    
+    .container #section2 #sobre-mi #right #skils #progress p{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .container #section2 #sobre-mi #right #skils #progress div{
+        height: 10px;
+        padding: 10px;
+        background-color: var(--background-color);
+        border-radius: 10px;
+    }
+    
+    #html, #css{
+        width: 80%;
+    }
+    
+    #js, #sql{
+        width: 70%;
+    }
+    
+    #php{
+        width: 65%;
+    }
 
-/* ESTILOS PARA EL SECTION 3 */
-.container #section3{
-    top: 210%;
-    font-family: var(--Fuente);
-}
+    /* ESTILOS PARA LA SECCION 3 */
+    .container #section3{
+        top: 200%;
+        font-family: var(--Fuente);
+    }
 
-.container #section3 #galery{
-    display: flex;
-    flex-wrap: wrap;
-    overflow: scroll;
-    width: 95%;
-    height: 50vh;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .container #section3 p{
+        text-align: justify;
+    }
 
-.container #section3 #galery #project{
-    width: fit-content;
-    height: 20px;
-    background-color: var(--background-color-cristal);
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-}
+    .container #section3 h2{
+        text-align: center;
+    }
 
-.container #section3 #galery #project a{
-    color: var(--ColorText);
-    font-family: var(--Fuente);
-}
+    .container #section3 #galery{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+        width: 95%;
+        height: 50vh;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container #section3 #galery #project{
+        width: fit-content;
+        height: 20px;
+        background-color: var(--background-color-cristal);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    
+    .container #section3 #galery #project a{
+        color: var(--ColorText);
+        font-family: var(--Fuente);
+    }
 
-/* ESTILOS DE SECCION 4 */
-.container #section4{
-    top: 310%;
-    font-family: var(--Fuente);
-}
 
-.container #section4 form{
-    width: 95%;
-    height: 50vh;
-    margin-left: auto;
-    margin-right: auto;
-}
+     /* ESTILOS DE SECCION 4 */
+     .container #section4{
+        top: 300%;
+        font-family: var(--Fuente);
+    }
+    
+    .container #section4 form{
+        width: 95%;
+        height: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container #section4 form input, textarea, button{
+        font-family: var(--Fuente);
+        font-size: 15px;
+        width: 85%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+        border: none;
+        color: var(--ColorText);
+        background-color: var(--background-color-cristal);
+        backdrop-filter: blur(5px);
+        text-align: center;
+        resize: none;
+    }
+    
+    .container #section4 form textarea{
+        height: 10vh;
+    }
+    
+    .container #section4 form button{
+        width: 60%;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
 
-.container #section4 form input, textarea, button{
-    font-family: var(--Fuente);
-    font-size: 15px;
-    width: 90%;
-    padding: 10px;
-    border-radius: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 20px;
-    border: none;
-    color: var(--ColorText);
-    background-color: var(--background-color-cristal);
-    backdrop-filter: blur(5px);
-    text-align: center;
-    resize: none;
+    /* SECTION 5 */
+    .container #section5{
+        top: 380%;
+        font-family: var(--Fuente);
+        text-align: center;
+    }
+    
+    .container #section5 a{
+        color: var(--ColorText);
+    }
 }
+  
 
-.container #section4 form textarea{
-    height: 10vh;
-}
+@media screen and (min-width: 1024px) and (max-width: 1720px) {
+    h2{
+        font-size: 200%;
+        text-align: center;
+    }
+    
+    /* ESTILOS DEL NAV-BAR */
+    .container #nav-bar{
+        top: 5%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        font-family: var(--Fuente);
+    }
+    
+    .container #nav-bar #nombre{
+        margin-left: 5%;
+        margin-right: auto;
+        width: 30%;
+    }
+    
+    .container #nav-bar #menu{
+        width: 70%;
+        margin-left: auto;
+        margin-right: 5%;
+        display: flex;
+        align-items: center;
+    }
 
-.container #section4 form button{
-    width: 20%;
-    margin-right: 40%;
-    margin-left: 40%;
-}
-
-/* SECTION 5 */
-.container #section5{
-    top: 390%;
-    font-family: var(--Fuente);
-    text-align: center;
-}
-
-.container #section5 a{
-    color: var(--ColorText);
+    .container #nav-bar #menu li{
+        list-style: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container #nav-bar #menu a{
+        margin-left: 10px;
+        margin-right: 10px;
+        color: var(--ColorText);
+        text-decoration: none;
+    }
+    
+    /* ESTILOS PARA LA SECCION 1 */
+    .container #section1{
+        text-align: center;
+        top: 30%;
+        font-family: var(--Fuente);
+    }
+    
+    .container #section1 h2, p{
+        text-align: center;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container #section1 h2{
+        font-size: 60px;
+        margin-bottom: 0px;
+    }
+    
+    .container #section1 p{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    /* ESTILOS PARA LA SECTION 2 */
+    .container #section2{
+        top: 110%;
+        font-family: var(--Fuente);
+    }
+    
+    .container #section2 #sobre-mi{
+        display: flex;
+    }
+    
+    .container #section2 #sobre-mi #left{
+        width: 50%;
+    }
+    
+    .container #section2 #sobre-mi #left p{
+        text-align: justify;
+    }
+    
+    .container #section2 #sobre-mi #right{
+        width: 48%;
+        margin-left: auto;
+    }
+    
+    .container #section2 #sobre-mi #right #skils #progress{
+        background-color: #fff;
+        width: 90%;
+        
+        margin-top: 5px;
+        margin-bottom: 15px;
+        background-color:var(--background-color-cristal);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+    }
+    
+    .container #section2 #sobre-mi #right #skils p{
+        margin: 0px;
+        text-align: left;
+    }
+    
+    .container #section2 #sobre-mi #right #skils #progress p{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    .container #section2 #sobre-mi #right #skils #progress div{
+        height: 10px;
+        padding: 10px;
+        background-color: var(--background-color);
+        border-radius: 10px;
+    }
+    
+    #html, #css{
+        width: 80%;
+    }
+    
+    #js, #sql{
+        width: 70%;
+    }
+    
+    #php{
+        width: 65%;
+    }
+    
+    /* ESTILOS PARA EL SECTION 3 */
+    .container #section3{
+        top: 210%;
+        font-family: var(--Fuente);
+    }
+    
+    .container #section3 #galery{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+        width: 95%;
+        height: 50vh;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container #section3 #galery #project{
+        width: fit-content;
+        height: 20px;
+        background-color: var(--background-color-cristal);
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    
+    .container #section3 #galery #project a{
+        color: var(--ColorText);
+        font-family: var(--Fuente);
+    }
+    
+    /* ESTILOS DE SECCION 4 */
+    .container #section4{
+        top: 310%;
+        font-family: var(--Fuente);
+    }
+    
+    .container #section4 form{
+        width: 95%;
+        height: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container #section4 form input, textarea, button{
+        font-family: var(--Fuente);
+        font-size: 15px;
+        width: 90%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+        border: none;
+        color: var(--ColorText);
+        background-color: var(--background-color-cristal);
+        backdrop-filter: blur(5px);
+        text-align: center;
+        resize: none;
+    }
+    
+    .container #section4 form textarea{
+        height: 10vh;
+    }
+    
+    .container #section4 form button{
+        width: 20%;
+        margin-right: 40%;
+        margin-left: 40%;
+    }
+    
+    /* SECTION 5 */
+    .container #section5{
+        top: 390%;
+        font-family: var(--Fuente);
+        text-align: center;
+    }
+    
+    .container #section5 a{
+        color: var(--ColorText);
+    }
 }

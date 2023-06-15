@@ -43,3 +43,12 @@ fetch('../json/projectslinks.json')
 
   console.error('Error al cargar el archivo JSON:', error);
 });
+
+$("#toogle").click(function () {
+  if($("#menu").css('display' ) === 'block'){
+    $("#menu").fadeOut();
+  }
+  else{
+    $("#menu").fadeIn();
+  }
+});
